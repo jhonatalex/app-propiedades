@@ -1,0 +1,32 @@
+.container {
+    &__header {
+      background-color: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+      h1 {
+        margin: 0;
+      }
+    }
+    &__main {
+      padding: 20px;
+    }
+    &__footer {
+      background-color: #f8f9fa;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  
+  .property-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    &__image {
+      width: 100%;
+      height: auto;
+    }
+    &__details {
+      padding: 10px 0;
+    }
+  }
+  
