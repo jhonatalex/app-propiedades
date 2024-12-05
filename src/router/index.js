@@ -4,7 +4,7 @@ import  DepartmentDetail  from '../views/DepartmentDetail.vue'
 
 const routes = [
     {
-        path:'/home',
+        path:'/',
         name:'DepartmentsList',
         component:DepartmentsList
     },
@@ -23,7 +23,7 @@ const routes = [
 ];
 
     const router = createRouter({
-        history: createWebHistory(),
+        history: createWebHistory('*'),
         routes
     });
   
