@@ -4,7 +4,7 @@ import  DepartmentDetail  from '../views/DepartmentDetail.vue'
 
 const routes = [
     {
-        path:'/',
+        path:'/home',
         name:'DepartmentsList',
         component:DepartmentsList
     },
