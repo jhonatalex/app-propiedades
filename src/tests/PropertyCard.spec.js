@@ -4,7 +4,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('PropertyCard.vue', () => {
   it('renders property details correctly', async () => {
-    const propert = {
+    const property = {
       id: 1,
       nombre: 'Apartamento Girasol',
       tipo: 'depto',
@@ -15,7 +15,7 @@ describe('PropertyCard.vue', () => {
     };
 
     const wrapper = shallowMount(PropertyCard, {
-      propsData: { propert }
+      propsData: { property }
     });
 
     await wrapper.vm.$nextTick();
