@@ -9,6 +9,11 @@ const routes = [
         component:DepartmentsList
     },
     {
+        path:'/list',
+        name:'DepartmentsList',
+        component:DepartmentsList
+    },
+    {
         path:'/departament/:id',
         name:'DepartmentDetail',
         component:DepartmentDetail,
