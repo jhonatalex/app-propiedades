@@ -1,0 +1,1 @@
+import{_ as o,c as t,a as s,o as r}from"./index-B7G22eBf.js";const c={},a={class:"hero is-primary is-medium"};function n(i,e){return r(),t("section",a,e[0]||(e[0]=[s("div",{class:"hero-body"},[s("div",{class:"container"},[s("h1",{class:"title"}," PAGINA NO ENCONTRADA "),s("h2",{class:"subtitle"}," Sorry ")])],-1)]))}const d=o(c,[["render",n]]);export{d as default};
