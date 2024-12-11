@@ -11,23 +11,24 @@ export default createStore({
             state.departments = departments
         }
     },
-    actions:{
-        async fetchProperties ({commit}){
-
-            try {
-
-            const response = await axios.get('https://apimocha.com/api-propiedades/list')
-            
-            commit('SET_PROPERTIES',response.data.propiedades)
-
-
-            }catch(e){
-                console.log('Error en fech',e)
-
+    actions: {
+        async fetchProperties ({ commit }) {
+          try {
+            const response = await axios.get('https://apimocha.com/api-propiedades/list');
+            console.log('Datos recibidos:', response.data); // Verificar los datos
+      
+            // Asegurarnos de que las propiedades tengan la estructura esperada
+            if (response.data && response.data.propiedades) {
+              commit('SET_PROPERTIES', response.data.propiedades);
+            } else {
+              console.error('No se encontraron propiedades en la respuesta.');
             }
-
+          } catch (e) {
+            console.log('Error en fetch:', e);
+          }
         }
-    },
+      },
+      
     modules: {}
 
 })

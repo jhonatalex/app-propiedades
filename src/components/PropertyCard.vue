@@ -1,5 +1,5 @@
 <template>
-    <div class="property-card">
+    <div class="property-card" >
       <img :src="property.imagen" alt="Property Image" class="property-card__image" />
       <div class="property-card__details">
         <h3 class="property-card__title">{{ property.nombre }}</h3>
@@ -13,7 +13,12 @@
   export default {
     props: {
       property: Object
+    },
+    methods: {
+    goToDetail() {
+      //this.$emit('view-detail', this.property.id);
     }
+  }
   };
   </script>
   
@@ -22,7 +27,7 @@
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+
     transition: all 0.3s ease-in-out;
   }
   
