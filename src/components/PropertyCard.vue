@@ -2,7 +2,7 @@
     <div class="property-card" >
       <img :src="property.imagen" alt="Property Image" class="property-card__image" />
       <div class="property-card__details">
-        <h3 class="property-card__title">{{ property.nombre }}</h3>
+        <h2 class="property-card__title">{{ property.nombre }}</h2>
         <p class="property-card__description">{{ property.descripcion }}</p>
         <p class="property-card__location">{{ property.ubicacion }}</p>
       </div>
